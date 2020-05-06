@@ -6,6 +6,7 @@
 /*global global, exports, module, require:false, process:false, Buffer:false */
 var XLSX = {};
 (function make_xlsx(XLSX) {
+    console.log('test');
     XLSX.version = '0.10.2';
     var current_codepage = 1200;
     /*global cptable:true */
