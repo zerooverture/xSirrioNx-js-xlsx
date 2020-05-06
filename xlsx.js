@@ -1335,9 +1335,8 @@ var XLSX = {};
     if(typeof JSZip !== 'undefined') jszip = JSZip;
     if (typeof exports !== 'undefined') {
         if (typeof module !== 'undefined' && module.exports) {
-            if(has_buf && typeof jszip === 'undefined') jszip = require('js'+'zip');
-            if(typeof jszip === 'undefined') jszip = require('./js'+'zip').JSZip;
-            _fs = require('f'+'s');
+            if (typeof jszip === 'undefined') jszip = require('./jszip.js');
+            _fs = require('fs');
         }
     }
     var attregexg=/([\w:]+)=((?:")([^"]*)(?:")|(?:')([^']*)(?:'))/g;
